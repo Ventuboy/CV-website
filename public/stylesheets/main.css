@@ -1,0 +1,46 @@
+/* h1 {
+	color:purple;
+} */
+
+.btn {
+	width: 10em;
+	height:4em;
+	border-radius:360;
+	
+}
+
+#intro{
+	margin-bottom:2em;
+}
+
+#home-par{
+	margin-top:2em;
+	margin-bottom:5em
+}
+
+#profile-pic{
+	margin-top:5em;
+	width: 16em;
+	border-radius:2em
+}
+
+.navbar{
+	background-color:#0d3370;
+}
+
+.jumbotron{
+	background-color:#0d3370;	
+}
+
+#main{
+	margin-top: 2em
+}
+
+#bottom-container{
+	color:white;
+}
+
+.i {
+	color:white;
+	font-size:1.5em;
+}
