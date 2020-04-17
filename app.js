@@ -17,8 +17,8 @@ app.get("/experiences", function(req,res){
 	res.render("experiences");
 })
 
-// app.listen(process.env.PORT, process.env.IP);
+app.listen(process.env.PORT, process.env.IP);
 
-app.listen(3000, function() { 
-  console.log('Server listening on port 3000'); 
-});
+// app.listen(3000, function() { 
+//   console.log('Server listening on port 3000'); 
+// });
