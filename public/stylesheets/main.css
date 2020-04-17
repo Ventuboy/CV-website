@@ -1,8 +1,7 @@
-
+/* HOME */
 #intro{
 	margin-bottom:2em;
 }
-
 #home-par{
 	/* margin-top:2em; */
 	margin-bottom:5em
@@ -13,28 +12,38 @@
 	width: 16em;
 	border-radius:2em
 }
-
 .navbar{
 	background-color:#102e5e;
 }
-
-.jumbotron{
-	background-color:#102e5e;	
+#jum-home{
+	background-color:#102e5e;
+	color:white;
 }
-
 #main{
 	margin-top: 2em
 }
-
-#bottom-container{
-	color:white;
-}
-
 .i {
 	color:white;
 	font-size:1.5em;
 }
-
 #buttons{
 	margin-bottom: 1.5em;
+}
+/* RESUME */
+
+#jum-resume{
+    background-image: url("/stylesheets/landscape.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:25em;
+}
+
+
+/* SCROLLSPY */
+.scrollspy-example {
+  position: relative;
+  height: 250px;
+  overflow: auto;
 }
