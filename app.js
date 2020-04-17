@@ -9,12 +9,12 @@ app.get("/", function(req,res){
 	res.render("home");
 })
 
-app.get("/about", function(req,res){
-	res.render("about");
+app.get("/resume", function(req,res){
+	res.render("resume");
 })
 
-app.listen(process.env.PORT, process.env.IP);
+// app.listen(process.env.PORT, process.env.IP);
 
-// app.listen(3000, function() { 
-//   console.log('Server listening on port 3000'); 
-// });
+app.listen(3000, function() { 
+  console.log('Server listening on port 3000'); 
+});
