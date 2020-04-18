@@ -40,10 +40,12 @@
 	height:25em;
 }
 
+.hide{
+	 display:none;
+} 
 
-/* SCROLLSPY */
-.scrollspy-example {
-  position: relative;
-  height: 250px;
-  overflow: auto;
+.ex{
+	font-style: italic;
+	font-size:0.8em;
 }
+
