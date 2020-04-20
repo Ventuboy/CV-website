@@ -4,9 +4,9 @@
 
 <div class="container-fluid" id="jum-resume" style="opacity:0">
 	<div class="row justify-content-center" >
-		<div class="col-4 text-center" style="margin-top:7rem">
-			<h1 class="display-2">My Resume</h1>
-			<img src="/stylesheets/picture.jpg" class="img-fluid rounded" style="margin-top:1rem; height:21rem" alt="Responsive image">
+		<div class="col-12 text-center" style="margin-top:7rem">
+			<h1 class="display-2 d-none d-sm-block">My Resume</h1>
+			<img src="/stylesheets/picture.jpg" class="img-fluid rounded" id="profile-pic" alt="Responsive image">
 		</div>
 	</div>
 </div>
@@ -16,7 +16,7 @@
 
 <div class="container-fluid" style="margin-top:1rem">
 	<div class="row justify-content-center">
-		<div class="trial1 col-6" style="opacity:0">
+		<div class="trial1 col-lg-7" style="opacity:0">
 			<span id=scroll-1>
 				<div class="text-center" >
 					<h1> Professional Experience </h1>
@@ -87,7 +87,7 @@
 	
 	<!-- EDUCATION AND QUALIFICATIONS -->
 	<div class="row justify-content-center">
-		<div class="trial2 col-6" style="opacity:0">
+		<div class="trial2 col-lg-7" style="opacity:0">
 			<div id="scroll-2" class="text-center" style="margin-top:5em">
 				<h1> Education And Qualifications </h1>
 				<hr style="border-top: 1px solid #102e5e">
@@ -155,7 +155,7 @@
 	</div>
 	<!-- LANGUAGE SKILLS -->
 	<div class="row justify-content-center">
-		<div class="trial3 col-6" style="opacity:0">
+		<div class="trial3 col-lg-7" style="opacity:0">
 			<div id=scroll-3 class="text-center" style="margin-top:5em">
 				<h1> Language Skills </h1>
 				<hr style="border-top: 1px solid #102e5e">
@@ -175,7 +175,7 @@
 	</div>
 	<!-- COMPUTER SKILLS -->
 	<div class="row justify-content-center">
-		<div class="trial4 col-6" style="opacity:0">
+		<div class="trial4 col-lg-7" style="opacity:0">
 			<div id=scroll-4 class="text-center" style="margin-top:5em">
 				<h1> Computer Skills </h1>
 				<hr style="border-top: 1px solid #102e5e">
@@ -211,7 +211,7 @@
 	</div>
 	<!-- EXTRACURRICULAR ACTIVITIES AND INTERESTS -->
 	<div class="row justify-content-center">
-		<div class="trial5 col-6" style="opacity:0">
+		<div class="trial5 col-lg-7" style="opacity:0">
 			<div class="text-center" style="margin-top:5em">
 				<h1> Extracurricular Activities and Interests </h1>
 				<hr style="border-top: 1px solid #102e5e">
@@ -252,7 +252,6 @@
 		var element_in_view1 = y_scroll_pos > activation_point1;
 		var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view1;
 		if(element_in_view1 || has_reached_bottom_of_page) {
-			console.log(element_position1);
 			$(".trial1").animate({ opacity: 1 },700);
 			$('a[href="#scroll-1"]').closest('li').addClass('active');
 		}

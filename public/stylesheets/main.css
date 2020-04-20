@@ -53,18 +53,10 @@ body.home {
 
 .position {
   position: fixed;
-  top: 45%;
-  left: 25%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-.position-res {
-  position: fixed;
-  top: 45%;
-  left: 25%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  top: 15rem;
+  left: 5rem;
+  /* bring your own prefixes
+  transform: translate(-50%, -50%); */
 }
 
 .home-nav{
@@ -72,3 +64,21 @@ body.home {
 	
 }
 
+#profile-pic {
+	margin-top:1rem;
+  display: block;
+  max-height:18em;
+  width: auto;
+  height: auto;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+#pic {
+  display: block;
+  max-height:30em;
+  /* width: auto;
+  height: auto; */
+	/* margin-left: auto;
+  margin-right: auto; */
+}

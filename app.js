@@ -17,6 +17,10 @@ app.get("/experiences", function(req,res){
 	res.render("experiences");
 })
 
+app.get("/about", function(req,res){
+	res.render("about");
+})
+
 app.listen(process.env.PORT, process.env.IP);
 
 // app.listen(3000, function() { 
