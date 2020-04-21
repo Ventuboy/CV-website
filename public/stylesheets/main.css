@@ -73,12 +73,11 @@ body.home {
 	margin-left: auto;
   margin-right: auto;
 }
-
+ 
 #pic {
-  display: block;
-  max-height:30em;
-  /* width: auto;
-  height: auto; */
-	/* margin-left: auto;
-  margin-right: auto; */
+	max-height:30em;
+	display:block;
+	margin-left:auto;
+	margin-right:auto
+  
 }
