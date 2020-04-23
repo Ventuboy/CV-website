@@ -35,11 +35,12 @@
 
 .hide{
 	 display:none;
-} 
+}
 
 .ex{
 	font-style: italic;
 	font-size:0.8em;
+	color:white;
 }
 
 body.home { 
