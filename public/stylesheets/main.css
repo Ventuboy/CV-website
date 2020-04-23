@@ -43,7 +43,7 @@
 }
 
 body.home { 
-  background: url("/stylesheets/landscape-home.jpg") no-repeat center center fixed; 
+  background: url("/stylesheets/landscape-home.jpg") no-repeat right fixed; 
 	/* background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80) no-repeat center center fixed;  */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -53,8 +53,8 @@ body.home {
 
 .position {
   position: fixed;
-  top: 15rem;
-  left: 5rem;
+  top: 20%;
+  left: 5%;
   /* bring your own prefixes
   transform: translate(-50%, -50%); */
 }
@@ -106,4 +106,22 @@ body.home {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.fadee {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
+.fader {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
+.prova{
+	background-color:black;
 }

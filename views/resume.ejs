@@ -20,7 +20,7 @@
 		<i class="arrow bounce fas fa-arrow-down"></i>
 	</div>
 	<div class="row justify-content-center">
-		<div class="trial1 col-lg-7" style="opacity:0">
+		<div class="trial col-lg-7" style="opacity:0">
 			<span id=scroll-1>
 				<div class="text-center" >
 					<h1> Professional Experience </h1>
@@ -112,8 +112,8 @@ for assistive and rehabilitation purposes.
 	
 	<!-- EDUCATION AND QUALIFICATIONS -->
 	<div class="row justify-content-center">
-		<div class="trial2 col-lg-7" style="opacity:0">
-			<div id="scroll-2" class="text-center" style="margin-top:5em">
+		<div class="trial col-lg-7" style="opacity:1">
+			<div id="scroll-2" class=" text-center" style="margin-top:5em">
 				<h1> Education And Qualifications </h1>
 				<hr style="border-top: 1px solid #102e5e">
 			</div>
@@ -153,8 +153,8 @@ for assistive and rehabilitation purposes.
 	</div>
 	<!-- LANGUAGE SKILLS -->
 	<div class="row justify-content-center">
-		<div class="trial3 col-lg-7" style="opacity:0">
-			<div id=scroll-3 class="text-center" style="margin-top:5em">
+		<div class="trial col-lg-7" style="opacity:1">
+			<div id="scroll-3" class="text-center" style="margin-top:5em">
 				<h1> Language Skills </h1>
 				<hr style="border-top: 1px solid #102e5e">
 			</div>
@@ -176,8 +176,8 @@ for assistive and rehabilitation purposes.
 	</div>
 	<!-- COMPUTER SKILLS -->
 	<div class="row justify-content-center">
-		<div class="trial4 col-lg-7" style="opacity:0">
-			<div id=scroll-4 class="text-center" style="margin-top:5em">
+		<div class="trial col-lg-7" style="opacity:1">
+			<div id="scroll-4" class="text-center" style="margin-top:5em">
 				<h1> Computer Skills </h1>
 				<hr style="border-top: 1px solid #102e5e">
 			</div>
@@ -212,67 +212,6 @@ for assistive and rehabilitation purposes.
 	</div>
 </div>
 
-
-
-
-<script>
-	var element_position1 = $('#scroll-1').offset().top;
-	var element_position2 = $('#scroll-2').offset().top;
-	var element_position3 = $('#scroll-3').offset().top;
-	var element_position4 = $('#scroll-4').offset().top;
-	
-	var screen_height = $(window).innerWidth()//height();
-	var body_height = $('body').height();
-
-	var activation_offset = 0.4;//determines how far up the the page the element needs to be before triggering the function
-	var activation_point1 = element_position1 - (screen_height * activation_offset);
-	var activation_point2 = element_position2 - (screen_height * activation_offset);
-	var activation_point3 = element_position3 - (screen_height * activation_offset);
-	var activation_point4 = element_position4 - (screen_height * activation_offset);
-	var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little bit of buffer	
-
-	//Does something when user scrolls to it OR
-	//Does it when user has reached the bottom of the page and hasn't triggered the function yet
-	$(window).on('scroll', function() {
-		var y_scroll_pos = window.pageYOffset;
-		var element_in_view1 = y_scroll_pos > activation_point1;
-		var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view1;
-		if(element_in_view1 || has_reached_bottom_of_page) {
-			$("#prova").fadeOut(400,function(){
-				$(".trial1").animate({ opacity: 1 },700);
-				$('a[href="#scroll-1"]').closest('li').addClass('active');
-			});
-		}
-	});
-	$(window).on('scroll', function() {
-		var y_scroll_pos = window.pageYOffset;
-		var element_in_view2 = y_scroll_pos > activation_point2;
-		var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view2;
-		if(element_in_view2 || has_reached_bottom_of_page) {
-			$(".trial2").animate({ opacity: 1 },700);
-			 $('a[href="#scroll-2"]').closest('li').addClass('active');
-		}
-	});
-	$(window).on('scroll', function() {
-		var y_scroll_pos = window.pageYOffset;
-		var element_in_view3 = y_scroll_pos > activation_point3;
-		var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view3;
-		if(element_in_view3 || has_reached_bottom_of_page) {
-			$(".trial3").animate({ opacity: 1 },700);
-			 $('a[href="#scroll-3"]').closest('li').addClass('active');
-		}
-	});
-	$(window).on('scroll', function() {
-		var y_scroll_pos = window.pageYOffset;
-		var element_in_view4 = y_scroll_pos > activation_point4;
-		var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view4;
-		if(element_in_view4 || has_reached_bottom_of_page) {
-			$(".trial4").animate({ opacity: 1 },700);
-			 $('a[href="#scroll-4"]').closest('li').addClass('active');
-		}
-	});
-</script>
-
 <script>
 	$(".ex").closest("li").toggleClass('hide');
 </script>
@@ -281,6 +220,30 @@ for assistive and rehabilitation purposes.
 $(window).ready(function(){
 	$("#jum-resume").animate({ opacity: 1 },800);
 })
+</script>
+
+<script>
+	$(window).on("load",function() {
+		$(window).on('scroll', function() {
+		$("#prova").fadeOut(100,function(){});
+		});
+	});
+		
+	$(window).on("load",function() {
+		$(window).on('scroll', function() {
+		var windowBottom = $(this).scrollTop() + $(this).outerHeight();
+		$(".trial").each(function() {
+			/* Check the location of each desired element */
+			var objectBottom = $(this).offset().top ;
+			/* If the element is completely within bounds of the window, fade it in */
+			if (objectBottom+50< windowBottom) { //object comes into view (scrolling down)
+				if ($(this).css("opacity")==0) {$(this).fadeTo(800,1);}
+			} else { //object goes out of view (scrolling up)
+				if ($(this).css("opacity")==1) {$(this).fadeTo(800,0);}
+			}
+		});
+		}) //invoke scroll-handler on page-load
+	});
 </script>
 
 <%- include("partials/navbar-bottom") %>
