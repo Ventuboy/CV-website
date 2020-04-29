@@ -1,0 +1,132 @@
+<script type="text/javascript">
+	//Cities
+	var Firenze =new ol.geom.Circle(ol.proj.fromLonLat([11.255,43.769]),35000);
+	var Palermo =new ol.geom.Circle(ol.proj.fromLonLat([13.361,38.11]),35000);
+	var Reggio =new ol.geom.Circle(ol.proj.fromLonLat([15.65,38.114]),35000);
+	var Lecce =new ol.geom.Circle(ol.proj.fromLonLat([18.174,40.353]),35000);
+	var Napoli =new ol.geom.Circle(ol.proj.fromLonLat([14.248,40.835]),35000);
+	var Roma =new ol.geom.Circle(ol.proj.fromLonLat([12.485,41.895]),35000);
+	var Bologna =new ol.geom.Circle(ol.proj.fromLonLat([11.343,44.49]),35000);
+	var Genova =new ol.geom.Circle(ol.proj.fromLonLat([8.933,44.407]),35000);
+	var Cagliari =new ol.geom.Circle(ol.proj.fromLonLat([9.112,39.216]),35000);
+	var Torino =new ol.geom.Circle(ol.proj.fromLonLat([7.682,45.067]),35000);
+	var Vienna =new ol.geom.Circle(ol.proj.fromLonLat([16.371,48.22]),35000);
+	var Bordeaux =new ol.geom.Circle(ol.proj.fromLonLat([-0.58,44.841]),35000);
+	var Parigi =new ol.geom.Circle(ol.proj.fromLonLat([2.351,48.856]),35000);
+	var Barcellona =new ol.geom.Circle(ol.proj.fromLonLat([2.177,41.382]),35000);
+	var Granada =new ol.geom.Circle(ol.proj.fromLonLat([-3.602,37.183]),35000);
+	var Siviglia =new ol.geom.Circle(ol.proj.fromLonLat([-5.995,37.388]),35000);
+	var Valencia =new ol.geom.Circle(ol.proj.fromLonLat([-0.375,39.469]),35000);
+	var Lisbona =new ol.geom.Circle(ol.proj.fromLonLat([-9.136,38.707]),35000);
+	var Palma =new ol.geom.Circle(ol.proj.fromLonLat([2.65,39.569]),35000);
+	var IlCairo =new ol.geom.Circle(ol.proj.fromLonLat([31.243,30.048]),35000);
+	var Ios =new ol.geom.Circle(ol.proj.fromLonLat([25.333,36.717]),35000);
+	var Pag =new ol.geom.Circle(ol.proj.fromLonLat([14.946,44.496]),35000);
+	var Budva =new ol.geom.Circle(ol.proj.fromLonLat([18.841,42.288]),35000);
+	var Spalato =new ol.geom.Circle(ol.proj.fromLonLat([16.4399,43.511]),35000);
+	var Zara =new ol.geom.Circle(ol.proj.fromLonLat([15.232,44.118]),35000);
+	var Pola =new ol.geom.Circle(ol.proj.fromLonLat([13.845,44.87]),35000);
+	var Zagabria =new ol.geom.Circle(ol.proj.fromLonLat([15.977,45.813]),35000);
+	var Berlino =new ol.geom.Circle(ol.proj.fromLonLat([13.388,52.517]),35000);
+	var MonacodiBaviera =new ol.geom.Circle(ol.proj.fromLonLat([11.573,48.137]),35000);
+	var Praga =new ol.geom.Circle(ol.proj.fromLonLat([14.421,50.087]),35000);
+	var Londra =new ol.geom.Circle(ol.proj.fromLonLat([-0.127,51.507]),35000);
+	var Bruxelles =new ol.geom.Circle(ol.proj.fromLonLat([4.375,50.838]),35000);
+	var Amsterdam =new ol.geom.Circle(ol.proj.fromLonLat([4.893,52.372]),35000);
+	var Utrecht =new ol.geom.Circle(ol.proj.fromLonLat([5.109,52.094]),35000);
+	var Budapest =new ol.geom.Circle(ol.proj.fromLonLat([19.04,47.498]),35000);
+	var Ajaccio =new ol.geom.Circle(ol.proj.fromLonLat([8.737,41.926]),35000);
+	var Filadelfia =new ol.geom.Circle(ol.proj.fromLonLat([-75.163,39.952]),35000);
+	var NewYork =new ol.geom.Circle(ol.proj.fromLonLat([-74.006,40.712]),35000);
+	var Atlanta =new ol.geom.Circle(ol.proj.fromLonLat([-84.39,33.749]),35000);
+	var Miami =new ol.geom.Circle(ol.proj.fromLonLat([-80.193,25.774]),35000);
+	var KeyWest =new ol.geom.Circle(ol.proj.fromLonLat([-81.772,24.562]),35000);
+	var Orlando =new ol.geom.Circle(ol.proj.fromLonLat([-81.379,28.542]),35000);
+	var Toronto =new ol.geom.Circle(ol.proj.fromLonLat([-79.387,43.653]),35000);
+	var Copenaghen =new ol.geom.Circle(ol.proj.fromLonLat([12.57,55.686]),35000);
+	
+	//Features
+	
+	var circleFirenze = new ol.Feature(Firenze);
+	var circlePalermo = new ol.Feature(Palermo);
+	var circleReggio = new ol.Feature(Reggio);
+	var circleLecce = new ol.Feature(Lecce);
+	var circleNapoli = new ol.Feature(Napoli);
+	var circleRoma = new ol.Feature(Roma);
+	var circleBologna = new ol.Feature(Bologna);
+	var circleGenova = new ol.Feature(Genova);
+	var circleCagliari = new ol.Feature(Cagliari);
+	var circleTorino = new ol.Feature(Torino);
+	var circleVienna = new ol.Feature(Vienna);
+	var circleBordeaux = new ol.Feature(Bordeaux);
+	var circleParigi = new ol.Feature(Parigi);
+	var circleBarcellona = new ol.Feature(Barcellona);
+	var circleGranada = new ol.Feature(Granada);
+	var circleSiviglia = new ol.Feature(Siviglia);
+	var circleValencia = new ol.Feature(Valencia);
+	var circleLisbona = new ol.Feature(Lisbona);
+	var circlePalma = new ol.Feature(Palma);
+	var circleIlCairo = new ol.Feature(IlCairo);
+	var circleIos = new ol.Feature(Ios);
+	var circlePag = new ol.Feature(Pag);
+	var circleBudva = new ol.Feature(Budva);
+	var circleSpalato = new ol.Feature(Spalato);
+	var circleZara = new ol.Feature(Zara);
+	var circlePola = new ol.Feature(Pola);
+	var circleZagabria = new ol.Feature(Zagabria);
+	var circleBerlino = new ol.Feature(Berlino);
+	var circleMonacodiBaviera = new ol.Feature(MonacodiBaviera);
+	var circlePraga = new ol.Feature(Praga);
+	var circleLondra = new ol.Feature(Londra);
+	var circleBruxelles = new ol.Feature(Bruxelles);
+	var circleAmsterdam = new ol.Feature(Amsterdam);
+	var circleUtrecht = new ol.Feature(Utrecht);
+	var circleBudapest = new ol.Feature(Budapest);
+	var circleAjaccio = new ol.Feature(Ajaccio);
+	var circleFiladelfia = new ol.Feature(Filadelfia);
+	var circleNewYork = new ol.Feature(NewYork);
+	var circleAtlanta = new ol.Feature(Atlanta);
+	var circleMiami = new ol.Feature(Miami);
+	var circleKeyWest = new ol.Feature(KeyWest);
+	var circleOrlando = new ol.Feature(Orlando);
+	var circleToronto = new ol.Feature(Toronto);
+	var circleCopenaghen = new ol.Feature(Copenaghen);
+	
+	// Source and vector layer
+	var vectorSource = new ol.source.Vector({
+		projection: 'EPSG:4326',
+		// features: [pointFeature, circleFeature, circleFeature2]
+		features: [circleFirenze, circlePalermo, circleReggio, circleLecce, circleNapoli, circleRoma, circleBologna, circleGenova, circleCagliari, circleTorino, circleVienna, circleBordeaux, circleParigi, circleBarcellona, circleGranada, circleSiviglia, circleValencia, circleLisbona, circlePalma, circleIlCairo, circleIos, circlePag, circleBudva, circleSpalato, circleZara, circlePola, circleZagabria, circleBerlino, circleMonacodiBaviera, circlePraga, circleLondra, circleBruxelles, circleAmsterdam, circleUtrecht, circleBudapest, circleAjaccio, circleFiladelfia, circleNewYork, circleAtlanta, circleMiami, circleKeyWest, circleOrlando, circleToronto, circleCopenaghen]
+	});
+
+		var style = new ol.style.Style({
+			fill: new ol.style.Fill({
+				color: 'rgba(255, 0, 0, 0.3)'
+			}),
+			stroke: new ol.style.Stroke({
+				width: 2,
+				color: 'rgba(255, 0, 0, 1)'
+			}),
+		});
+		var vectorLayer = new ol.layer.Vector({
+			source: vectorSource,
+			style: style
+		});
+		// Maps
+		var map = new ol.Map({
+			target: 'map',  // The DOM element that will contains the map
+			renderer: 'canvas', // Force the renderer to be used
+			layers: [
+				// Add a new Tile layer getting tiles from OpenStreetMap source
+				new ol.layer.Tile({
+					source: new ol.source.OSM()
+				}),
+				vectorLayer
+			],
+			// Create a view centered on the specified location and zoom level
+			view: new ol.View({
+				center: ol.proj.fromLonLat([11.2, 43]),
+				zoom: 4
+			})
+		});
+</script>
