@@ -67,13 +67,13 @@ body.home {
 }
 
 #profile-pic {
-	margin-top:1.5rem;
+	margin-top:1%;
   display: block;
-  max-height:20.5em;
+  max-height:17rem;
   width: auto;
   height: auto;
 	margin-left: auto;
-		margin-bottom: 2rem;
+		margin-bottom: 1%;
   margin-right: auto;
 }
  
