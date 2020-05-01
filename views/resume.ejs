@@ -4,9 +4,18 @@
 
 <div class="container-fluid" id="jum-resume" style="opacity:0">
 	<div class="row justify-content-center" >
-		<div class="col-12 text-center" style="margin-top:5rem">
-			<h1 class="display-2 d-none d-sm-block">My Resume</h1>
+		<div class="col-lg-4 text-center" style="margin-top:5rem">
+			<!-- <h1 class="display-2 d-none d-sm-block">My Resume</h1> -->
 			<img src="/stylesheets/picture.jpg" class="img-fluid rounded" id="profile-pic" alt="Responsive image">
+			<div style="text-align: center" id="prova" >
+				<h1 class="display-4">Scroll down!</h1>
+				<i class="arrow bounce fas fa-arrow-down"></i>
+			</div>
+			<div id="prova1" class="rounded" style="display:none; margin-top:2em; background-color:rgba(255,255,255,0.5)">
+				<p style="font-size: x-large;">
+					<b>Matteo Venturi</b><br>Date of birth: 24/01/1993<br>Place of birth: Florence, Italy<br>email: mttventuri@gmail.com
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -15,10 +24,6 @@
 <!-- PROFESSIONAL EXPRECIENCE -->
 
 <div class="container-fluid" style="margin-top:2rem">
-	<div style="text-align: center" id="prova" >
-		<h1 class="display-4">Scroll down!</h1>
-		<i class="arrow bounce fas fa-arrow-down"></i>
-	</div>
 	<div class="row justify-content-center">
 		<div class="trial col-lg-9" style="opacity:0">
 			<span id=scroll-1>
@@ -287,6 +292,11 @@ $(window).ready(function(){
 		$("#prova").fadeOut(100,function(){});
 		});
 	});
+		$(window).on("load",function() {
+		$(window).on('scroll', function() {
+		$("#prova1").fadeIn(1000,function(){});
+		});
+	});
 		
 	$(window).on("load",function() {
 		$(window).on('scroll', function() {
@@ -296,9 +306,9 @@ $(window).ready(function(){
 			var objectBottom = $(this).offset().top ;
 			/* If the element is completely within bounds of the window, fade it in */
 			if (objectBottom+50< windowBottom) {//object comes into view (scrolling down)
-				if ($(this).css("opacity")==0) {$(this).fadeTo(800,1);}
+				if ($(this).css("opacity")==0) {$(this).fadeTo(1100,1);}
 			} else { //object goes out of view (scrolling up)
-				if ($(this).css("opacity")==1) {$(this).fadeTo(800,0);}
+				if ($(this).css("opacity")==1) {$(this).fadeTo(1100,0);}
 			}
 		});
 		}) //invoke scroll-handler on page-load

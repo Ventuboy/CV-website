@@ -25,12 +25,13 @@
 
 #jum-resume{
     background-image: url("/stylesheets/landscape-resume.jpg");
-	/* background-image:url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
+	/* background-image:url("https://images.unsplash.com/photo-1489367753387-4a80734cbc3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"); */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-	height:auto;
+	/* height:auto; */
+	height:100%;
 }
 
 .hide{
@@ -66,12 +67,13 @@ body.home {
 }
 
 #profile-pic {
-	margin-top:1rem;
+	margin-top:1.5rem;
   display: block;
-  max-height:18em;
+  max-height:20.5em;
   width: auto;
   height: auto;
 	margin-left: auto;
+		margin-bottom: 2rem;
   margin-right: auto;
 }
  
