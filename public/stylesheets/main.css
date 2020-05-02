@@ -32,6 +32,7 @@
     background-size: cover;
 	/* height:auto; */
 	height:100%;
+	align-content:center;
 }
 
 .hide{
@@ -69,7 +70,7 @@ body.home {
 #profile-pic {
 	margin-top:1%;
   display: block;
-  max-height:17rem;
+  max-height:18rem;
   width: auto;
   height: auto;
 	margin-left: auto;
@@ -89,7 +90,7 @@ body.home {
 
 
 .arrow {
-	font-size:5rem;
+	font-size:4rem;
 	margin:2rem 0;
 
 }
