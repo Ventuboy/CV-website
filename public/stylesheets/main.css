@@ -25,7 +25,7 @@
 
 #jum-resume{
     /* background-image: url("/stylesheets/landscape-resume.jpg"); */
-	background-image: url("/stylesheets/DSC04702_bn.png");
+	background-image: url("/stylesheets/DSC04702_mod_bn.jpg");
 
     background-attachment: fixed;
     background-position: top;
@@ -88,7 +88,7 @@ body.home {
 }
 
 .arrow {
-	font-size:4rem;
+	font-size:6rem;
 	margin:2rem 0;
 	color:white;
 
