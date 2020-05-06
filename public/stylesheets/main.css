@@ -129,4 +129,7 @@ body.home {
         height: 400px;  /* The height is 400 pixels */
        }
 
+.navbar.scrolled {
+    opacity:0;
+}
  

@@ -318,6 +318,23 @@ $(window).ready(function(){
 		});
 		}) //invoke scroll-handler on page-load
 	});
+	
+</script>
+<script>
+	$(window).ready(function(){
+		$("#spy").addClass("scrolled");
+	})
+</script>
+
+<script>
+	$(window).on("load",function(){
+            $(document).scroll(function () {
+                var $nav = $("#spy");
+                // $nav.removeClass("scrolled");
+				$("#spy").animate({ opacity: 1 },800);
+            });
+        });
+
 </script>
 
 <%- include("partials/navbar-bottom") %>
